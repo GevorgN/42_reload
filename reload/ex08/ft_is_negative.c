@@ -6,21 +6,21 @@
 /*   By: gevorg <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 20:06:48 by gevorg            #+#    #+#             */
-/*   Updated: 2024/01/10 20:13:23 by gevorg           ###   ########.fr       */
+/*   Updated: 2024/01/13 20:03:41 by genavasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
 	if (n > 0)
 	{
-		write(1, "P", 1);
+		ft_putchar("P");
 	}
 	else
 	{
-		write(1, "N", 1);
+		ft_putchar("N");
 	}
 }
 /*

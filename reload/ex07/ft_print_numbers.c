@@ -6,19 +6,20 @@
 /*   By: gevorg <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 20:01:58 by gevorg            #+#    #+#             */
-/*   Updated: 2024/01/10 20:04:53 by gevorg           ###   ########.fr       */
+/*   Updated: 2024/01/13 20:08:35 by genavasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
-	write(1, "0123456789", 10);
+	char	c;
+
+	c = '0';
+	while (c <= '9')
+	{
+		ft_putchar(c);
+		c++;
+	}
 }
-/*
-int	main(void)
-{
-	ft_print_numbers();
-}
-*/
